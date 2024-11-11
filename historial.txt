@@ -1,0 +1,9 @@
+
+Fecha y hora: 2024-11-11 14:38:28, Base: USD, Destino: ARS, Tipo de cambio: 997.2500, Cantidad: 52.36, Resultado: 52216.01
+Fecha y hora: 2024-11-11 14:38:33, Base: ARS, Destino: USD, Tipo de cambio: 0.0010, Cantidad: 86.00, Resultado: 0.09
+Fecha y hora: 2024-11-11 14:38:40, Base: USD, Destino: BRL, Tipo de cambio: 5.7410, Cantidad: 74.35, Resultado: 426.84
+Fecha y hora: 2024-11-11 14:38:49, Base: BRL, Destino: USD, Tipo de cambio: 0.1742, Cantidad: 10.00, Resultado: 1.74
+Fecha y hora: 2024-11-11 14:38:53, Base: USD, Destino: COP, Tipo de cambio: 4351.4647, Cantidad: 1254.00, Resultado: 5456736.73
+Fecha y hora: 2024-11-11 14:39:00, Base: COP, Destino: USD, Tipo de cambio: 0.0002, Cantidad: 982.30, Resultado: 0.23
+Fecha y hora: 2024-11-11 14:39:07, Base: USD, Destino: MXN, Tipo de cambio: 20.1805, Cantidad: 658.00, Resultado: 13278.77
+Fecha y hora: 2024-11-11 14:39:14, Base: MXN, Destino: USD, Tipo de cambio: 0.0496, Cantidad: 1256.35, Resultado: 62.30

@@ -10,6 +10,7 @@ public class Conversor {
                 *************************************************************
                 Sea bienvenido/a al Conversor de Moneda =)
                 
+                Elija una de las siguientes opciones:                
                 1) Dólar           =>>   Peso argentino
                 2) Peso argentino  =>>   Dólar
                 3) Dólar           =>>   Real brasileño
@@ -18,13 +19,15 @@ public class Conversor {
                 6) Peso colombiano =>>   Dólar
                 7) Dólar           =>>   Peso mexicano
                 8) Peso mexicano   =>>   Dólar
-                9) Salir
-                Elija una opción válida:
+                9) Historial
+                10) Salir
                 ************************************************************
                 """;
 
+        ConsultarMoneda consulta = new ConsultarMoneda();
+
         Scanner scanner = new Scanner(System.in);
-        while (opcion != 9) {
+        while (opcion != 10) {
             System.out.println(menu);
             opcion = scanner.nextInt();
 
@@ -62,17 +65,25 @@ public class Conversor {
                     target = "USD";
                     break;
                 case 9:
+                    ProcesadorArchivo.mostrarHistorial();
+                    break;
+                case 10:
                     System.out.println("Sistema finalizado.");
                     break;
                 default:
                     System.out.println("Opción inválida. Intente de nuevo.");
             }
 
+            if (opcion < 9) {
+                System.out.println("Ingrese la cantidad que desea convertir: ");
+                cantidad = scanner.nextDouble();
+
+                Moneda moneda = consulta.consultarMoneda(base, target, cantidad);
+                System.out.println("Resultado: " + moneda.conversion_result());
+
+                ProcesadorArchivo.guardarHistorial(base, target, cantidad, moneda.conversion_rate(), moneda.conversion_result());
+            }
         }
-
-
-        System.out.println(menu);
-
 
     }
 }
